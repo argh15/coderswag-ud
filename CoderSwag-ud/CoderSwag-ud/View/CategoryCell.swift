@@ -1,5 +1,5 @@
 //
-//  CategoryCellTableViewCell.swift
+//  CategoryCell.swift
 //  CoderSwag-ud
 //
 //  Created by Arghadeep  on 08/02/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategoryCellTableViewCell: UITableViewCell {
+class CategoryCell: UITableViewCell {
     
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
