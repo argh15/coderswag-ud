@@ -22,34 +22,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-zQ-6cO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-zQ-6cO">
                                 <rect key="frame" x="0.0" y="78" width="414" height="730"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="PMV-LM-Rts" customClass="CategoryCellTableViewCell" customModule="CoderSwag_ud" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="140" id="PMV-LM-Rts" customClass="CategoryCellTableViewCell" customModule="CoderSwag_ud" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PMV-LM-Rts" id="PWK-eT-7Cz">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="iXU-VC-3aC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                    <rect key="frame" x="0.0" y="4" width="414" height="132"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9j-18-epm">
-                                                    <rect key="frame" x="160.5" y="86" width="93" height="28"/>
+                                                    <rect key="frame" x="160.5" y="56" width="93" height="28"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="iXU-VC-3aC" firstAttribute="top" secondItem="PWK-eT-7Cz" secondAttribute="top" id="F4z-Mi-kGo"/>
+                                                <constraint firstItem="iXU-VC-3aC" firstAttribute="top" secondItem="PWK-eT-7Cz" secondAttribute="top" constant="4" id="F4z-Mi-kGo"/>
                                                 <constraint firstAttribute="trailing" secondItem="iXU-VC-3aC" secondAttribute="trailing" id="IDq-k6-zBM"/>
                                                 <constraint firstItem="P9j-18-epm" firstAttribute="centerY" secondItem="PWK-eT-7Cz" secondAttribute="centerY" id="L6D-6G-YMc"/>
                                                 <constraint firstItem="iXU-VC-3aC" firstAttribute="leading" secondItem="PWK-eT-7Cz" secondAttribute="leading" id="T8F-xn-1kX"/>
                                                 <constraint firstItem="P9j-18-epm" firstAttribute="centerX" secondItem="PWK-eT-7Cz" secondAttribute="centerX" id="TZx-1M-0qk"/>
-                                                <constraint firstAttribute="bottom" secondItem="iXU-VC-3aC" secondAttribute="bottom" id="mC9-O6-6Or"/>
+                                                <constraint firstAttribute="bottom" secondItem="iXU-VC-3aC" secondAttribute="bottom" constant="4" id="mC9-O6-6Or"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
